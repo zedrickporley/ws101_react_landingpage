@@ -1,0 +1,68 @@
+.services {
+    padding: 50px 10%;
+    background: var(--bg-color);
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 40px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
+  }
+  
+  .services-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .services-box {
+    background: var(--second-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  }
+  
+  .services-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--main-color); 
+    animation: glow 1s infinite alternate; 
+  }
+  
+  @keyframes glow {
+    from {
+        box-shadow: 0 0 5px var(--main-color);
+    }
+    to {
+        box-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+    }
+  }
+  
+  .services-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+  }
+  
+  .services-box h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .services-box p {
+    margin: 10px 0;
+    color: #e0e0e0;
+    line-height: 1.5;
+  }
+  
+  
